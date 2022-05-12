@@ -1,11 +1,6 @@
 {
   "links": [
     {
-      "name": "twitter",
-      "url": "https://twitter.com/frankschmidt902",
-      "image": "images/social/twitter.svg"
-    },
-    {
       "name": "github",
       "url": "https://github.com/therockhopper",
       "image": "images/social/github.svg"
