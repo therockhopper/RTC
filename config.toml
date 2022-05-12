@@ -1,0 +1,28 @@
+baseURL = "https://frankschmidt.ca"
+languageCode = "en-us"
+title = "Frank Schmidt"
+themesDir = "themes"
+theme = "winston"
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+paginate = 3
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+
+[params]
+  google_analytics_id = ""
+  twitter_handle = "@frankschmidt902"
+
+  showAuthorOnHomepage = true
+  showAuthorOnPosts = false
+  showPostsOnHomepage = true
+
+  addFrame = true
+  addDot = true
+
+  highlightColor = '#7b16ff'

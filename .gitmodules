@@ -1,0 +1,3 @@
+[submodule "themes/winston"]
+	path = themes/winston
+	url = https://github.com/zerostaticthemes/hugo-winston-theme
