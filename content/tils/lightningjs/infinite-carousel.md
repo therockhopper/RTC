@@ -4,7 +4,7 @@ date: 2022-05-12T17:46:39-03:00
 ---
 
 ```
-export class ApplePlusRow extends Component {
+export class Row extends Component {
   private slides;
   private index = 0;
   private slideSize = SpotlightCard.width;
@@ -16,8 +16,6 @@ export class ApplePlusRow extends Component {
     this.index = 0;
     this.slides = slides;
 
-    // Can't ts-ignore block..............
-    // @ts-ignore
     this.children = [ { type: SpotlightCard, x: -this.slideSize * 2 + this.xOffset, content: this.slides[this.slides.length - 2] }, { type: SpotlightCard, x: -this.slideSize + this.xOffset, content: this.slides[this.slides.length - 1] }, { type: SpotlightCard, x: 0 + this.xOffset, content: this.slides[0] }, { type: SpotlightCard, x: this.slideSize + this.xOffset, content: this.slides[1] }, { type: SpotlightCard, x: this.slideSize * 2 + this.xOffset, content: this.slides[2] }
     ];
   }
@@ -43,17 +41,17 @@ export class ApplePlusRow extends Component {
     let incoming;
     if (dir < 0) {
       incoming = {
-        type: SpotlightCard,
-        content: this.contentLeft,
-        x: -this.slideSize * 3 + this.xOffset
+type: SpotlightCard,
+      content: this.contentLeft,
+      x: -this.slideSize * 3 + this.xOffset
       };
       // add to start
       this.children = [incoming, ...this.children];
     } else {
       incoming = {
-        type: SpotlightCard,
-        content: this.contentRight,
-        x: this.slideSize * 3 + this.xOffset
+type: SpotlightCard,
+      content: this.contentRight,
+      x: this.slideSize * 3 + this.xOffset
       };
       // add to end
       this.children = [...this.children, incoming];
@@ -61,52 +59,52 @@ export class ApplePlusRow extends Component {
 
     if (dir < 0) {
       this.children = this.children.map(c => {
-        c.smooth = {
-          x: [
-            c.x + this.slideSize,
-            { duration: this.animationDuration, timingFunction: 'ease-in' }
-          ]
-        };
-        return c;
-      });
-    } else {
-      this.children = this.children.map(c => {
-        c.smooth = {
-          x: [
-            c.x - this.slideSize,
-            { duration: this.animationDuration, timingFunction: 'ease-in' }
-          ]
-        };
-        return c;
-      });
-    }
+          c.smooth = {
+x: [
+c.x + this.slideSize,
+{ duration: this.animationDuration, timingFunction: 'ease-in' }
+]
+};
+return c;
+});
+} else {
+  this.children = this.children.map(c => {
+      c.smooth = {
+x: [
+c.x - this.slideSize,
+{ duration: this.animationDuration, timingFunction: 'ease-in' }
+]
+};
+return c;
+});
+}
 
-    setTimeout(() => {
-      // Enable the slider
-      this.allowShift = true;
-      dir < 0 ? this.children.pop() : this.children.shift();
+setTimeout(() => {
+    // Enable the slider
+    this.allowShift = true;
+    dir < 0 ? this.children.pop() : this.children.shift();
     }, this.animationDuration);
-  }
+}
 
-  get contentLeft() {
-    return this.slides[
-      (this.index + this.slides.length - 2) % this.slides.length
-    ];
-  }
+get contentLeft() {
+  return this.slides[
+    (this.index + this.slides.length - 2) % this.slides.length
+  ];
+}
 
-  get contentRight() {
-    return this.slides[(this.index + 2) % this.slides.length];
-  }
+get contentRight() {
+  return this.slides[(this.index + 2) % this.slides.length];
+}
 
-  _getFocused() {
-    return this.tag('Center');
-  }
+_getFocused() {
+  return this.tag('Center');
+}
 
-  _handleRight() {
-    this.shiftSlide(1);
-  }
-  _handleLeft() {
-    this.shiftSlide(-1);
-  }
+_handleRight() {
+  this.shiftSlide(1);
+}
+_handleLeft() {
+  this.shiftSlide(-1);
+}
 }
 ```

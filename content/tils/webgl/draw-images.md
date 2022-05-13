@@ -16,7 +16,7 @@ void mainImage ( out vec4 fragColor, in vec2 fragCoord )
 ```
 
 
-Flafh RBG over time
+Flash RBG over time
 ```
 void mainImage ( out vec4 fragColor, in vec2 fragCoord )
 {
