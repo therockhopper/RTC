@@ -4,7 +4,7 @@ date: 2022-05-12T17:46:39-03:00
 ---
 
 ```
-export class ApplePlusRow extends Component {
+export class Row extends Component {
   private slides;
   private index = 0;
   private slideSize = SpotlightCard.width;
