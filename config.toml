@@ -19,7 +19,7 @@ paginate = 3
   twitter_handle = "@frankschmidt902"
 
   showAuthorOnHomepage = true
-  showAuthorOnPosts = false
+  showAuthorOnPosts = true
   showPostsOnHomepage = true
 
   addFrame = true
