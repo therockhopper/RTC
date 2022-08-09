@@ -12,14 +12,15 @@
     <div class="intro-content">{{ .Content }}</div>
   </div>
 
-  {{ if .Site.Params.showPostsOnHomepage }}
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+  <h1>Latest Today I Learned(s)</h1>
+  {{ if .Site.Params.showTILsOnHomepage }}
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "tils") }}
     {{ range $paginator.Pages }}
       {{ .Render "summary" }}
     {{ end }}
     {{ template "_internal/pagination.html" . }}
   {{ end }}
-
+  
 {{ end }}
 
 {{ define "footer_js" }}
