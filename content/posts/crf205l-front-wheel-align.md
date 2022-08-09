@@ -1,5 +1,5 @@
 ---
-title: "CRF250L front wheel alignment"
+title: "CRF250L fork alignment"
 date: 2022-05-12T17:46:39-03:00
 tags: 
 - CRF250L
