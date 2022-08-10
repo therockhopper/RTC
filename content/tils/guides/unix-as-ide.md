@@ -6,7 +6,7 @@ tags:
 - theSkillsToPayTheBills
 - unix
 - vi
-draft: true
+draft: false
 ---
 Great read for any new devs looking to learn about unix and command line tools. Shows you how some of the tools IDEs such as VS code give you are also available in GNU/Linux. Always nice to have options.
 
