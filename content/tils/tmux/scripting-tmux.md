@@ -1,8 +1,8 @@
 ---
 title: "Scripting Tmux"
-draft: true
+draft: false
 ---
-TL:DR here is a start script.
+TL:DR here is a starter script.
 ```zsh
 #!/bin/zsh
 
@@ -25,3 +25,4 @@ tmux send-keys -t $session:$window "cd $project_path" C-m
 tmux attach-session -t $cnn_session
 ```
 
+Explaniation

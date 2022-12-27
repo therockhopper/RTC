@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "e79dbaafe4af7cd6",
+        "id": "35efe4fa6a3a7ee2",
         "type": "tabs",
         "children": [
           {
-            "id": "dead21bb5f2528d2",
+            "id": "83ec283ecabf37ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/tils/git/conflicts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "da4c26b0da4839c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/tils/tmux/scripting-tmux.md",
+                "file": "content/posts/crf205l-front-wheel-align.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/tils/tmux/scripting-tmux.md",
+                "file": "content/posts/crf205l-front-wheel-align.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/tils/tmux/scripting-tmux.md",
+                "file": "content/posts/crf205l-front-wheel-align.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,15 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/tils/tmux/scripting-tmux.md"
+                "file": "content/posts/crf205l-front-wheel-align.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,14 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "da4c26b0da4839c6",
+  "active": "83ec283ecabf37ce",
   "lastOpenFiles": [
+    "content/posts/onyx-boox-templates.md",
+    "content/tils/tmux/scripting-tmux.md",
     "content/tils/git/conflicts.md",
     "content/tils/git/aliases.md",
     "content/tils/ibmcloud/ibm-s3-bucket-cors.md",
     "content/tils/ibmcloud/cloudant-recover-doc.md",
     "content/tils/shell/csv-to-json.md",
-    "content/tils/tmux/scripting-tmux.md",
     "content/tils/git/tags.md"
   ]
 }
