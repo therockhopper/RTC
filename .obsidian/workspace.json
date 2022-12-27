@@ -1,0 +1,171 @@
+{
+  "main": {
+    "id": "4cacc09362539013",
+    "type": "split",
+    "children": [
+      {
+        "id": "e79dbaafe4af7cd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dead21bb5f2528d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/tils/git/conflicts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da4c26b0da4839c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/tils/tmux/scripting-tmux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ddb4fed29b2ffc10",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c0b6e4e8172e675",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "175892d189f1a8ae",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "796f0358a6b67f45",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3d73d09b00173dfe",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3f52cfb8a97134a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d575f40f155c312",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a94d660165ff9aff",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/tils/tmux/scripting-tmux.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d41b044efd3325e3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/tils/tmux/scripting-tmux.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0e1649c6064e08e0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5d0822349bd5ca9f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/tils/tmux/scripting-tmux.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "da4c26b0da4839c6",
+  "lastOpenFiles": [
+    "content/tils/git/conflicts.md",
+    "content/tils/git/aliases.md",
+    "content/tils/ibmcloud/ibm-s3-bucket-cors.md",
+    "content/tils/ibmcloud/cloudant-recover-doc.md",
+    "content/tils/shell/csv-to-json.md",
+    "content/tils/tmux/scripting-tmux.md",
+    "content/tils/git/tags.md"
+  ]
+}
