@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Infinite Carousel - Frank Schmidt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://blog.frankschmidt.ca/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://blog.frankschmidt.ca/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://blog.frankschmidt.ca/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://blog.frankschmidt.ca/favicon/site.webmanifest">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.fb5d1282ef81826b431e78c8cb0de3c94f82b2a0d338e8ac55d15b4f155c3ea3.css">
+  
+
+  
+  
+  <meta property="og:title" content="Infinite Carousel"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://blog.frankschmidt.ca/tils/lightningjs/infinite-carousel/"/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@frankschmidt902"/>
+  <meta name="twitter:creator" content="@frankschmidt902"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-default-single'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-about">
+                    <a href="https://blog.frankschmidt.ca/pages/about/">About</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-posts">
+                    <a href="https://blog.frankschmidt.ca/posts/">Posts</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-til">
+                    <a href="https://blog.frankschmidt.ca/tils/">TIL</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://blog.frankschmidt.ca">Frank Schmidt</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/posts/">Posts</a>
+            </li>
+        
+            <li class="menu-item-til">
+                <a href="/tils/">TIL</a>
+            </li>
+        
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+<div class="intro">
+  <h1>Infinite Carousel<span class="dot">.</span></h1>
+  
+</div>
+
+<div class="content">
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">export class Row extends Component {
+</span></span><span class="line"><span class="cl">  private slides;
+</span></span><span class="line"><span class="cl">  private index = 0;
+</span></span><span class="line"><span class="cl">  private slideSize = SpotlightCard.width;
+</span></span><span class="line"><span class="cl">  private allowShift: boolean = true;
+</span></span><span class="line"><span class="cl">  private animationDuration: number = 0.5;
+</span></span><span class="line"><span class="cl">  private xOffset: number = 1920 * 0.1;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  set content(slides) {
+</span></span><span class="line"><span class="cl">    this.index = 0;
+</span></span><span class="line"><span class="cl">    this.slides = slides;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    this.children = [ { type: SpotlightCard, x: -this.slideSize * 2 + this.xOffset, content: this.slides[this.slides.length - 2] }, { type: SpotlightCard, x: -this.slideSize + this.xOffset, content: this.slides[this.slides.length - 1] }, { type: SpotlightCard, x: 0 + this.xOffset, content: this.slides[0] }, { type: SpotlightCard, x: this.slideSize + this.xOffset, content: this.slides[1] }, { type: SpotlightCard, x: this.slideSize * 2 + this.xOffset, content: this.slides[2] }
+</span></span><span class="line"><span class="cl">    ];
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  _handleUp() {
+</span></span><span class="line"><span class="cl">    this.signal(&#39;setViewPosition&#39;, 1);
+</span></span><span class="line"><span class="cl">    return false;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  _handleDown() {
+</span></span><span class="line"><span class="cl">    this.signal(&#39;setViewPosition&#39;, 1);
+</span></span><span class="line"><span class="cl">    return false;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  /**
+</span></span><span class="line"><span class="cl">   * +1 left
+</span></span><span class="line"><span class="cl">   * -1 right
+</span></span><span class="line"><span class="cl">   */
+</span></span><span class="line"><span class="cl">  shiftSlide(dir: number) {
+</span></span><span class="line"><span class="cl">    if (!this.allowShift) return;
+</span></span><span class="line"><span class="cl">    this.allowShift = false;
+</span></span><span class="line"><span class="cl">    this.index = (this.index + this.slides.length + dir) % this.slides.length;
+</span></span><span class="line"><span class="cl">    let incoming;
+</span></span><span class="line"><span class="cl">    if (dir &lt; 0) {
+</span></span><span class="line"><span class="cl">      incoming = {
+</span></span><span class="line"><span class="cl">type: SpotlightCard,
+</span></span><span class="line"><span class="cl">      content: this.contentLeft,
+</span></span><span class="line"><span class="cl">      x: -this.slideSize * 3 + this.xOffset
+</span></span><span class="line"><span class="cl">      };
+</span></span><span class="line"><span class="cl">      // add to start
+</span></span><span class="line"><span class="cl">      this.children = [incoming, ...this.children];
+</span></span><span class="line"><span class="cl">    } else {
+</span></span><span class="line"><span class="cl">      incoming = {
+</span></span><span class="line"><span class="cl">type: SpotlightCard,
+</span></span><span class="line"><span class="cl">      content: this.contentRight,
+</span></span><span class="line"><span class="cl">      x: this.slideSize * 3 + this.xOffset
+</span></span><span class="line"><span class="cl">      };
+</span></span><span class="line"><span class="cl">      // add to end
+</span></span><span class="line"><span class="cl">      this.children = [...this.children, incoming];
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    if (dir &lt; 0) {
+</span></span><span class="line"><span class="cl">      this.children = this.children.map(c =&gt; {
+</span></span><span class="line"><span class="cl">          c.smooth = {
+</span></span><span class="line"><span class="cl">x: [
+</span></span><span class="line"><span class="cl">c.x + this.slideSize,
+</span></span><span class="line"><span class="cl">{ duration: this.animationDuration, timingFunction: &#39;ease-in&#39; }
+</span></span><span class="line"><span class="cl">]
+</span></span><span class="line"><span class="cl">};
+</span></span><span class="line"><span class="cl">return c;
+</span></span><span class="line"><span class="cl">});
+</span></span><span class="line"><span class="cl">} else {
+</span></span><span class="line"><span class="cl">  this.children = this.children.map(c =&gt; {
+</span></span><span class="line"><span class="cl">      c.smooth = {
+</span></span><span class="line"><span class="cl">x: [
+</span></span><span class="line"><span class="cl">c.x - this.slideSize,
+</span></span><span class="line"><span class="cl">{ duration: this.animationDuration, timingFunction: &#39;ease-in&#39; }
+</span></span><span class="line"><span class="cl">]
+</span></span><span class="line"><span class="cl">};
+</span></span><span class="line"><span class="cl">return c;
+</span></span><span class="line"><span class="cl">});
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">setTimeout(() =&gt; {
+</span></span><span class="line"><span class="cl">    // Enable the slider
+</span></span><span class="line"><span class="cl">    this.allowShift = true;
+</span></span><span class="line"><span class="cl">    dir &lt; 0 ? this.children.pop() : this.children.shift();
+</span></span><span class="line"><span class="cl">    }, this.animationDuration);
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">get contentLeft() {
+</span></span><span class="line"><span class="cl">  return this.slides[
+</span></span><span class="line"><span class="cl">    (this.index + this.slides.length - 2) % this.slides.length
+</span></span><span class="line"><span class="cl">  ];
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">get contentRight() {
+</span></span><span class="line"><span class="cl">  return this.slides[(this.index + 2) % this.slides.length];
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">_getFocused() {
+</span></span><span class="line"><span class="cl">  return this.tag(&#39;Center&#39;);
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">_handleRight() {
+</span></span><span class="line"><span class="cl">  this.shiftSlide(1);
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">_handleLeft() {
+</span></span><span class="line"><span class="cl">  this.shiftSlide(-1);
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div>
+</div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/therockhopper" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com/in/frankschmidt902" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.5993fcb11c07dea925a3fbd58c03c7f1857197c35fccce3aa963a12c0b3c9960.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>theSkillsToPayTheBills on Frank Schmidt</title>
+    <link>https://blog.frankschmidt.ca/tags/theskillstopaythebills/</link>
+    <description>Recent content in theSkillsToPayTheBills on Frank Schmidt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.frankschmidt.ca/tags/theskillstopaythebills/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unix as IDE: Introduction to CLI tools</title>
+      <link>https://blog.frankschmidt.ca/tils/guides/unix-as-ide/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/guides/unix-as-ide/</guid>
+      <description>Great read for any new devs looking to learn about unix and command line tools. Shows you how some of the tools IDEs such as VS code give you are also available in GNU/Linux. Always nice to have options.
+Topics covered: File and project management — ls, find, grep/ack, bash Text editor and editing tools — vim, awk, sort, column Compiler and/or interpreter — gcc, perl Build tools — make Debugger — gdb, valgrind, ltrace, lsof, pmap Version control — diff, patch, svn, git Unix as IDE: Introduction</description>
+    </item>
+    
+  </channel>
+</rss>

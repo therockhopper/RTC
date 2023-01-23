@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TIL on Frank Schmidt</title>
+    <link>https://blog.frankschmidt.ca/tils/</link>
+    <description>Recent content in TIL on Frank Schmidt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.frankschmidt.ca/tils/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Syncthing</title>
+      <link>https://blog.frankschmidt.ca/tils/guides/syncthing/</link>
+      <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/guides/syncthing/</guid>
+      <description>Syncthing
+Mac Install from HomeBrew
+brew install syncthing Once Syncthing has been installed, run the following command to install it as a service and run automatically.
+brew services start syncthing In a web browser, type the following address to access the Syncthing Web GUI:
+127.0.0.1:8384 </description>
+    </item>
+    
+    <item>
+      <title>Unix as IDE: Introduction to CLI tools</title>
+      <link>https://blog.frankschmidt.ca/tils/guides/unix-as-ide/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/guides/unix-as-ide/</guid>
+      <description>Great read for any new devs looking to learn about unix and command line tools. Shows you how some of the tools IDEs such as VS code give you are also available in GNU/Linux. Always nice to have options.
+Topics covered: File and project management — ls, find, grep/ack, bash Text editor and editing tools — vim, awk, sort, column Compiler and/or interpreter — gcc, perl Build tools — make Debugger — gdb, valgrind, ltrace, lsof, pmap Version control — diff, patch, svn, git Unix as IDE: Introduction</description>
+    </item>
+    
+    <item>
+      <title>Evaluation of Javascript can stop your CSS animation from running</title>
+      <link>https://blog.frankschmidt.ca/tils/css/eval-js-stop-css-animation/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/css/eval-js-stop-css-animation/</guid>
+      <description>When building a splash screen for a OTT application we decided to try switching from a canvas animation to a CSS keyframe animation that would be replaced by our app running in a canvas after the animation was complete.
+Problem was when the browser would take ~15s to evaluate our script (large player deps), so our keyframe CSS animation would pause until the evaluation was complete. This is because certain CSS props (opacity, transformation, etc.</description>
+    </item>
+    
+    <item>
+      <title>Remote web inspector</title>
+      <link>https://blog.frankschmidt.ca/tils/browser/remote-web-inspector/</link>
+      <pubDate>Mon, 16 May 2022 11:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/browser/remote-web-inspector/</guid>
+      <description>OSX Start up canary with remote debug support open Google\ Chrome\ Canary.app --args --remote-debugging-port=9222 --user-data-dir=remote-profile</description>
+    </item>
+    
+    <item>
+      <title>Aspect Ratio</title>
+      <link>https://blog.frankschmidt.ca/tils/css/aspect-ratio/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/css/aspect-ratio/</guid>
+      <description>Aspect Ratio now in Chrome Canary new build of chrome canary v84ish enables the usage of the new aspect-ratio CSS property. Goodbye padding hacks for aspect ratios.
+/* Old hacky way */ .video { padding-top: 56.25%; } /* New cool way */ .video { aspect-ratio: 16 / 9; } </description>
+    </item>
+    
+    <item>
+      <title>Async Await Timeout</title>
+      <link>https://blog.frankschmidt.ca/tils/js/async-await-timeout/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/js/async-await-timeout/</guid>
+      <description>sometimes you want to pause for a few seconds in a async for loop to avoid hitting a rate limit. To do this easily we can create a async version of setTimeout to help us.
+const wait = time =&amp;gt; new Promise(resolve =&amp;gt; setTimeout(() =&amp;gt; { return resolve(true) }, time), ) // Use the wait in a async loop etc await wait(1000) </description>
+    </item>
+    
+    <item>
+      <title>Cloudant Recover Doc</title>
+      <link>https://blog.frankschmidt.ca/tils/ibmcloud/cloudant-recover-doc/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/ibmcloud/cloudant-recover-doc/</guid>
+      <description>See All your DB Changes http://example.iriscouch.com/test/_changes
+Get all the revsion info for your document http://example.iriscouch.com/test/$id?revs_info=true
+&amp;#34;_revs_info&amp;#34;: [ { &amp;#34;rev&amp;#34;: &amp;#34;52-974f2f2894e6147908ac933f7ce6252c&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;available&amp;#34; }, { &amp;#34;rev&amp;#34;: &amp;#34;51-5dd5375336b502da3ea1b2de461f45b2&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;deleted&amp;#34; }, { &amp;#34;rev&amp;#34;: &amp;#34;50-6ebfdb24514d7654ca920c714e1b3971&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;available&amp;#34; }, { &amp;#34;rev&amp;#34;: &amp;#34;49-983467f528270a7c25c636db3bf4de9e&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;missing&amp;#34; } ] Find the last valid revision you want to restore, and retive the document at that revision. Then re-create the document
+https://my-url.cloudant.com/myDB/MyDocName?rev=myLastValidRev </description>
+    </item>
+    
+    <item>
+      <title>Cron Task Loop</title>
+      <link>https://blog.frankschmidt.ca/tils/js/cron-task-loop/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/js/cron-task-loop/</guid>
+      <description>When writing a cron/task it can be helpfull to batch the task and run muitiple smaller runs.
+static async start(docs]) { if (!docs) { docs = await this.getDocs() } // Cron Logic // Do we need to run again? docs = await this.getDocs() if (docs.length &amp;gt; 0) { console.log(&amp;#39;More docs to process&amp;#39;) this.start(docs) } } </description>
+    </item>
+    
+    <item>
+      <title>Csv to Json</title>
+      <link>https://blog.frankschmidt.ca/tils/shell/csv-to-json/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/shell/csv-to-json/</guid>
+      <description># Install requirements brew install jq &amp;amp;&amp;amp; npm i -g csvtojson # Convert the csv and save it as json csvtojson ./myCsv.csv | jq . &amp;gt; myJson.json </description>
+    </item>
+    
+    <item>
+      <title>Draw Images</title>
+      <link>https://blog.frankschmidt.ca/tils/webgl/draw-images/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/webgl/draw-images/</guid>
+      <description>Display image in ShaderToy
+void mainImage ( out vec4 fragColor, in vec2 fragCoord ) { vec2 xy = fragCoord.xy / iResolution.xy; // Condensing this into oneline vec4 textColor = texture(iChannel0,xy); // get the pixel at the xy from iCahnnel0 fragColor = textColor; // set the screen pixel to that color } Flash RBG over time
+void mainImage ( out vec4 fragColor, in vec2 fragCoord ) { vec2 xy = fragCoord.xy / iResolution.</description>
+    </item>
+    
+    <item>
+      <title>Git Aliases</title>
+      <link>https://blog.frankschmidt.ca/tils/git/aliases/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/git/aliases/</guid>
+      <description>Git allows you to setup aliases to reduce the amount of charcheters you have to type to execute a command or even to create some commands you might think git is missing
+Below are some super common alias I like to use in my own git configs
+// Create a global alias for checkout git config --global alias.co checkout // Create a global alias for branch git config --global alias.br branch // Create a global alias for branch git config --global alias.</description>
+    </item>
+    
+    <item>
+      <title>Git Tags</title>
+      <link>https://blog.frankschmidt.ca/tils/git/tags/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/git/tags/</guid>
+      <description>Git has two types of tags lightweight (pointer to commit, nothing more) annotated (contains author,checksum,GPG) A lightweight tag is very much like a branch that doesn’t change—it’s just a pointer to a specific commit
+Annotated tags, however, are stored as full objects in the Git database. They’re checksummed; contain the tagger name, e-mail, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG).</description>
+    </item>
+    
+    <item>
+      <title>Ibm S3 Bucket Cors</title>
+      <link>https://blog.frankschmidt.ca/tils/ibmcloud/ibm-s3-bucket-cors/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/ibmcloud/ibm-s3-bucket-cors/</guid>
+      <description>how to set up CORS to enable all origins to use GET
+ibmcloud cos put-bucket-cors --bucket BUCKET_NAME --cors-configuration &amp;#39;{ &amp;#34;CORSRules&amp;#34;: [ { &amp;#34;AllowedMethods&amp;#34;: [&amp;#34;GET&amp;#34;], &amp;#34;AllowedOrigins&amp;#34;: [&amp;#34;*&amp;#34;] } ] }&amp;#39; --region us-east </description>
+    </item>
+    
+    <item>
+      <title>Infinite Carousel</title>
+      <link>https://blog.frankschmidt.ca/tils/lightningjs/infinite-carousel/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/lightningjs/infinite-carousel/</guid>
+      <description>export class Row extends Component { private slides; private index = 0; private slideSize = SpotlightCard.width; private allowShift: boolean = true; private animationDuration: number = 0.5; private xOffset: number = 1920 * 0.1; set content(slides) { this.index = 0; this.slides = slides; this.children = [ { type: SpotlightCard, x: -this.slideSize * 2 + this.xOffset, content: this.slides[this.slides.length - 2] }, { type: SpotlightCard, x: -this.slideSize + this.xOffset, content: this.slides[this.slides.length - 1] }, { type: SpotlightCard, x: 0 + this.</description>
+    </item>
+    
+    <item>
+      <title>Intro to Shaders</title>
+      <link>https://blog.frankschmidt.ca/tils/webgl/shaders/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/webgl/shaders/</guid>
+      <description>Terms fragCoord &amp;ndash; Pixels x,y,z value Using the fragCoord lets make half the screen black and the other half red
+void mainImage( out vec4 fragColor, in vec2 fragCoord) { vec2 xy = fragCoord.xy; // we obtain our coordinates for the current pixel vec4 solidRed = vec4(0,0.0,0.0,1.0); // this is actully black right now if (xy.x &amp;gt; 300.0) { // Arbitrary number, we don&amp;#39;t know how big our screen is solidRed.r = 1.</description>
+    </item>
+    
+    <item>
+      <title>List Git Conflicts</title>
+      <link>https://blog.frankschmidt.ca/tils/git/conflicts/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/git/conflicts/</guid>
+      <description>Ever needed to list all the conflicted files in your repo after attempting a merge?
+git diff --name-only --diff-filter=U </description>
+    </item>
+    
+    <item>
+      <title>NPM Reverse search Dependencies</title>
+      <link>https://blog.frankschmidt.ca/tils/js/npm-reverse-deps-search/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/js/npm-reverse-deps-search/</guid>
+      <description>I specifically wanted to find what package used a dependency that was breaking an initial install. This may help somebody out trying todo the same:
+find ./node_modules/ -name package.json | xargs grep &amp;lt;the_package_name&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Random String (GUID,UUID)</title>
+      <link>https://blog.frankschmidt.ca/tils/js/random-string/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/js/random-string/</guid>
+      <description>UUIDs (Universally Unique IDentifier), also known as GUIDs (Globally Unique IDentifier), according to RFC 4122, are identifiers designed to provide certain uniqueness guarantees.
+Here is a oneliner to create one in JS
+Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15); But there are several pitfalls to this JS only approch
+Invalid id format (UUIDs must be of the form &amp;ldquo;xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx&amp;rdquo;, where x is one of [0-9, a-f] M is one of [1-5], and N is [8, 9, a, or b] Use of a low-quality source of randomness (such as Math.</description>
+    </item>
+    
+    <item>
+      <title>WSL Copy to Clipboard</title>
+      <link>https://blog.frankschmidt.ca/tils/wsl/copy-to-clipboard/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/wsl/copy-to-clipboard/</guid>
+      <description>When running commands in WSL sometimes you want to copy the output to the clipboard.
+# Copy contents of the file to windows clipboard cat myfile.txt | clip.exe using xclip would just copies it to the linux clipboard</description>
+    </item>
+    
+    <item>
+      <title>Zsh Syntax Highlighting Not Found</title>
+      <link>https://blog.frankschmidt.ca/tils/zsh/zsh-syntax-highlighting-not-found/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/zsh/zsh-syntax-highlighting-not-found/</guid>
+      <description>Run the two commands to fix this issue
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting </description>
+    </item>
+    
+  </channel>
+</rss>

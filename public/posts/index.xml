@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Frank Schmidt</title>
+    <link>https://blog.frankschmidt.ca/posts/</link>
+    <description>Recent content in Blog on Frank Schmidt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.frankschmidt.ca/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Onyx Boox Templates</title>
+      <link>https://blog.frankschmidt.ca/posts/onyx-boox-templates/</link>
+      <pubDate>Wed, 18 May 2022 20:48:25 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/posts/onyx-boox-templates/</guid>
+      <description>My Onyx Boox Note Air 2 supports templates for its notes. To take advantage of this, you just need to create a PDF template and upload it to your Boox&amp;rsquo;s template directory. I use Boox Drop for this.
+My Templates Daily Planner &amp;ndash; Personal TODO items. Weekly Planner &amp;ndash; High level weekly planner. Project Planner &amp;ndash; So I can attempt to plan yet another failed side project Work Week Planner &amp;ndash; Scratchpad for work related notes when Jira won&amp;rsquo;t load.</description>
+    </item>
+    
+    <item>
+      <title>CRF250L fork alignment</title>
+      <link>https://blog.frankschmidt.ca/posts/crf205l-front-wheel-align/</link>
+      <pubDate>Thu, 12 May 2022 17:46:39 -0300</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/posts/crf205l-front-wheel-align/</guid>
+      <description>Torque Guide Axle nut: 65lb Axle pinch bolts: 20nm/15lb Top triple: 16lb Lower triple: 15lb Instructions Loosen front wheel Axel pinch bolts on one side (opposite of breaks) lower triple bolts, both sides Align front wheel Lower front wheel onto the ground Apply the brake lever several times, then pump the fork server times. Loosen front wheel Tighten the axle pinch bolts Tighten the lower triple bolts </description>
+    </item>
+    
+  </channel>
+</rss>

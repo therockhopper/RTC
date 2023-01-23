@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Cloudant Recover Doc - Frank Schmidt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://blog.frankschmidt.ca/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://blog.frankschmidt.ca/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://blog.frankschmidt.ca/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://blog.frankschmidt.ca/favicon/site.webmanifest">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.fb5d1282ef81826b431e78c8cb0de3c94f82b2a0d338e8ac55d15b4f155c3ea3.css">
+  
+
+  
+  
+  <meta property="og:title" content="Cloudant Recover Doc"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://blog.frankschmidt.ca/tils/ibmcloud/cloudant-recover-doc/"/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@frankschmidt902"/>
+  <meta name="twitter:creator" content="@frankschmidt902"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-default-single'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-about">
+                    <a href="https://blog.frankschmidt.ca/pages/about/">About</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-posts">
+                    <a href="https://blog.frankschmidt.ca/posts/">Posts</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-til">
+                    <a href="https://blog.frankschmidt.ca/tils/">TIL</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://blog.frankschmidt.ca">Frank Schmidt</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/posts/">Posts</a>
+            </li>
+        
+            <li class="menu-item-til">
+                <a href="/tils/">TIL</a>
+            </li>
+        
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+<div class="intro">
+  <h1>Cloudant Recover Doc<span class="dot">.</span></h1>
+  
+</div>
+
+<div class="content">
+  <p>See All your DB Changes
+<code>http://example.iriscouch.com/test/_changes</code></p>
+<p>Get all the revsion info for your document
+<code>http://example.iriscouch.com/test/$id?revs_info=true</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34;_revs_info&#34;: [
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">&#34;rev&#34;: &#34;52-974f2f2894e6147908ac933f7ce6252c&#34;,
+</span></span><span class="line"><span class="cl">&#34;status&#34;: &#34;available&#34;
+</span></span><span class="line"><span class="cl">},
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">&#34;rev&#34;: &#34;51-5dd5375336b502da3ea1b2de461f45b2&#34;,
+</span></span><span class="line"><span class="cl">&#34;status&#34;: &#34;deleted&#34;
+</span></span><span class="line"><span class="cl">},
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">&#34;rev&#34;: &#34;50-6ebfdb24514d7654ca920c714e1b3971&#34;,
+</span></span><span class="line"><span class="cl">&#34;status&#34;: &#34;available&#34;
+</span></span><span class="line"><span class="cl">},
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">&#34;rev&#34;: &#34;49-983467f528270a7c25c636db3bf4de9e&#34;,
+</span></span><span class="line"><span class="cl">&#34;status&#34;: &#34;missing&#34;
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">]
+</span></span></code></pre></div><p>Find the last valid revision you want to restore, and retive the document at that revision. Then re-create the document</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://my-url.cloudant.com/myDB/MyDocName?rev=myLastValidRev
+</span></span></code></pre></div>
+</div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/therockhopper" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com/in/frankschmidt902" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.5993fcb11c07dea925a3fbd58c03c7f1857197c35fccce3aa963a12c0b3c9960.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

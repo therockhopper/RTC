@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on Frank Schmidt</title>
+    <link>https://blog.frankschmidt.ca/tags/css/</link>
+    <description>Recent content in CSS on Frank Schmidt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.frankschmidt.ca/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evaluation of Javascript can stop your CSS animation from running</title>
+      <link>https://blog.frankschmidt.ca/tils/css/eval-js-stop-css-animation/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/css/eval-js-stop-css-animation/</guid>
+      <description>When building a splash screen for a OTT application we decided to try switching from a canvas animation to a CSS keyframe animation that would be replaced by our app running in a canvas after the animation was complete.
+Problem was when the browser would take ~15s to evaluate our script (large player deps), so our keyframe CSS animation would pause until the evaluation was complete. This is because certain CSS props (opacity, transformation, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

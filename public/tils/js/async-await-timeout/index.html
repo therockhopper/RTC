@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Async Await Timeout - Frank Schmidt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://blog.frankschmidt.ca/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://blog.frankschmidt.ca/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://blog.frankschmidt.ca/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://blog.frankschmidt.ca/favicon/site.webmanifest">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.fb5d1282ef81826b431e78c8cb0de3c94f82b2a0d338e8ac55d15b4f155c3ea3.css">
+  
+
+  
+  
+  <meta property="og:title" content="Async Await Timeout"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://blog.frankschmidt.ca/tils/js/async-await-timeout/"/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@frankschmidt902"/>
+  <meta name="twitter:creator" content="@frankschmidt902"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-default-single'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-about">
+                    <a href="https://blog.frankschmidt.ca/pages/about/">About</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-posts">
+                    <a href="https://blog.frankschmidt.ca/posts/">Posts</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-til">
+                    <a href="https://blog.frankschmidt.ca/tils/">TIL</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://blog.frankschmidt.ca">Frank Schmidt</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/posts/">Posts</a>
+            </li>
+        
+            <li class="menu-item-til">
+                <a href="/tils/">TIL</a>
+            </li>
+        
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+<div class="intro">
+  <h1>Async Await Timeout<span class="dot">.</span></h1>
+  
+</div>
+
+<div class="content">
+  <p>sometimes you want to pause for a few seconds in a async
+for loop to avoid hitting a rate limit. To do this easily we can create a async version of setTimeout to help us.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">wait</span> <span class="o">=</span> <span class="nx">time</span> <span class="p">=&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="nx">resolve</span> <span class="p">=&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="nx">resolve</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span> <span class="nx">time</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Use the wait in a async loop etc
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">await</span> <span class="nx">wait</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</span></span></code></pre></div>
+</div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/therockhopper" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com/in/frankschmidt902" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.5993fcb11c07dea925a3fbd58c03c7f1857197c35fccce3aa963a12c0b3c9960.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

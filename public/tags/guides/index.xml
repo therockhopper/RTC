@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>guides on Frank Schmidt</title>
+    <link>https://blog.frankschmidt.ca/tags/guides/</link>
+    <description>Recent content in guides on Frank Schmidt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.frankschmidt.ca/tags/guides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Syncthing</title>
+      <link>https://blog.frankschmidt.ca/tils/guides/syncthing/</link>
+      <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/guides/syncthing/</guid>
+      <description>Syncthing
+Mac Install from HomeBrew
+brew install syncthing Once Syncthing has been installed, run the following command to install it as a service and run automatically.
+brew services start syncthing In a web browser, type the following address to access the Syncthing Web GUI:
+127.0.0.1:8384 </description>
+    </item>
+    
+    <item>
+      <title>Unix as IDE: Introduction to CLI tools</title>
+      <link>https://blog.frankschmidt.ca/tils/guides/unix-as-ide/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frankschmidt.ca/tils/guides/unix-as-ide/</guid>
+      <description>Great read for any new devs looking to learn about unix and command line tools. Shows you how some of the tools IDEs such as VS code give you are also available in GNU/Linux. Always nice to have options.
+Topics covered: File and project management — ls, find, grep/ack, bash Text editor and editing tools — vim, awk, sort, column Compiler and/or interpreter — gcc, perl Build tools — make Debugger — gdb, valgrind, ltrace, lsof, pmap Version control — diff, patch, svn, git Unix as IDE: Introduction</description>
+    </item>
+    
+  </channel>
+</rss>
