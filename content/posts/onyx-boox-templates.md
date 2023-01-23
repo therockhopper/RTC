@@ -11,7 +11,7 @@ To take advantage of this, you just need to create a PDF template and upload it 
 ## [Daily Planner](/downloads/OnyxBooxTemplates/DailyPlanner.pdf) -- Personal TODO items.
 {{< iframe "/downloads/OnyxBooxTemplates/DailyPlanner.pdf" >}}
 
-## [Weekly Planner](/downloads/OnyxBooxTemplates/WeeklyPlanner.pdf) -- High level weeklkky planner.
+## [Weekly Planner](/downloads/OnyxBooxTemplates/WeeklyPlanner.pdf) -- High level weekly planner.
 {{< iframe "/downloads/OnyxBooxTemplates/WeeklyPlanner.pdf" >}}
 
 ## [Project Planner](/downloads/OnyxBooxTemplates/ProjectPlan.pdf) -- So I can attempt to plan yet another failed side project
