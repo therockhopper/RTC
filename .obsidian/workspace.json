@@ -4,20 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "86d9fda83cd359cd",
+        "id": "600ccc4a712b29e0",
         "type": "tabs",
         "children": [
           {
-            "id": "aec1fe9e3ddae473",
+            "id": "ed5dd56f01ac7eff",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "public/downloads/fschmidt/fschmidtCV.pdf"
+                "file": "content/pages/about.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f5a57bdf692db784",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/WhatIs/podman.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "public/downloads/fschmidt/fschmidtCV.pdf",
+                "file": "content/WhatIs/podman.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "public/downloads/fschmidt/fschmidtCV.pdf",
+                "file": "content/WhatIs/podman.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/downloads/fschmidt/fschmidtCV.pdf"
+                "file": "content/WhatIs/podman.md"
               }
             }
           }
@@ -144,17 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aec1fe9e3ddae473",
+  "active": "175892d189f1a8ae",
   "lastOpenFiles": [
+    "content/WhatIs/plex_debrid.md",
+    "content/WhatIs/podman.md",
     "content/pages/about.md",
+    "content/tils/css/aspect-ratio.md",
+    "content/tils/git/conflicts.md",
+    "content/tils/webgl/draw-images.md",
+    "content/tils/shell/csv-to-json.md",
     "public/downloads/fschmidt/fschmidtCV.pdf",
     "archetypes/pages.md",
-    "content/posts/onyx-boox-templates.md",
-    "public/downloads/OnyxBooxTemplates/ProjectPlan.pdf",
-    "archetypes/tils.md",
-    "archetypes/posts.md",
-    "archetypes/default.md",
-    "themes/winston/README.md",
-    "themes/winston/exampleSite/content/pages/about.md"
+    "content/posts/onyx-boox-templates.md"
   ]
 }
