@@ -1,5 +1,5 @@
 ---
-title: "Waht is Plex Debrid?"
+title: "What is Plex Debrid?"
 date: 2023-01-23T00:00:00-00:00
 tags: 
 - guides
