@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "10ae2926032b360b",
+        "id": "86d9fda83cd359cd",
         "type": "tabs",
         "children": [
           {
-            "id": "43fd95cdd2ecaa05",
+            "id": "aec1fe9e3ddae473",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,11 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "43fd95cdd2ecaa05",
+  "active": "aec1fe9e3ddae473",
   "lastOpenFiles": [
-    "archetypes/pages.md",
     "public/downloads/fschmidt/fschmidtCV.pdf",
     "content/pages/about.md",
+    "archetypes/pages.md",
     "content/posts/onyx-boox-templates.md",
     "public/downloads/OnyxBooxTemplates/ProjectPlan.pdf",
     "archetypes/tils.md",
