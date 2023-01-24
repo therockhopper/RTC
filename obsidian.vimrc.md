@@ -4,16 +4,21 @@ nmap k gk
 " I like using H and L for beginning/end of line
 nmap H ^
 nmap L $
+" Quickly remove search highlights
+nmap <F9> :nohl
 
-" turn hybrid line numbers on
-:set number relativenumber
-:set nu r
+" Yank to system clipboard
+set clipboard=unnamed
+
+" Go back and forward with Ctrl+O and Ctrl+I
+" (make sure to remove default Obsidian shortcuts for these to work)
+exmap back obcommand app:go-back
+nmap <C-o> :back
+exmap forward obcommand app:go-forward
+nmap <C-i> :forward
 
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-
-" Yank to system clipboard
-set clipboard=unnamed

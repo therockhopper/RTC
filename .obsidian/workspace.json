@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian.vimrc.md",
+                "file": "content/tils/guides/syncthing.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian.vimrc.md",
+                "file": "content/tils/guides/syncthing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian.vimrc.md",
+                "file": "content/tils/guides/syncthing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian.vimrc.md"
+                "file": "content/tils/guides/syncthing.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,17 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "175892d189f1a8ae",
+  "active": "08ec766c45d99dec",
   "lastOpenFiles": [
-    "content/posts/crf205l-front-wheel-align.md",
-    "obsidian.vimrc.md",
+    "content/tils/guides/plex_debrid.md",
+    "content/tils/guides/syncthing.md",
     "content/posts/onyx-boox-templates.md",
+    "obsidian.vimrc.md",
+    "Untitled.md",
+    "content/posts/crf205l-front-wheel-align.md",
+    "content/posts/_index.md",
     "content/tils/tmux/scripting-tmux.md",
     "content/tils/git/conflicts.md",
-    "content/tils/git/aliases.md",
-    "content/tils/ibmcloud/ibm-s3-bucket-cors.md",
-    "content/tils/ibmcloud/cloudant-recover-doc.md",
-    "content/tils/shell/csv-to-json.md",
-    "content/tils/git/tags.md"
+    "content/tils/git/aliases.md"
   ]
 }

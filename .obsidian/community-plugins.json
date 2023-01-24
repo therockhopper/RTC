@@ -1,5 +1,6 @@
 [
   "obsidian-git",
   "hugo-preview-obsidian",
-  "obsidian-vimrc-support"
+  "obsidian-vimrc-support",
+  "obsidian-linter"
 ]
