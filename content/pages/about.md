@@ -7,3 +7,5 @@ menu:
 ---
 
 # 👋 
+## [CV](/downloads/fschmidt/fschmidtCV.pdf)
+{{< iframe "/downloads/fschmidt/fschmidtCV.pdf" >}}

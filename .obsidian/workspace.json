@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "f14a4dd02f0968cd",
+        "id": "10ae2926032b360b",
         "type": "tabs",
         "children": [
           {
-            "id": "08ec766c45d99dec",
+            "id": "43fd95cdd2ecaa05",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/tils/_index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2edcbf5c44937f06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "themes/winston/archetypes/default.md",
+                "file": "content/pages/about.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "themes/winston/archetypes/default.md",
+                "file": "content/pages/about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "themes/winston/archetypes/default.md",
+                "file": "content/pages/about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "themes/winston/archetypes/default.md"
+                "file": "content/pages/about.md"
               }
             }
           }
@@ -159,17 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "175892d189f1a8ae",
+  "active": "43fd95cdd2ecaa05",
   "lastOpenFiles": [
     "archetypes/pages.md",
-    "themes/winston/archetypes/default.md",
-    "archetypes/default.md",
-    "content/WhatIs/unix-as-ide.md",
-    "content/_index.md",
-    "content/WhatIs/plex_debrid.md",
-    "content/WhatIs/_index.md",
+    "public/downloads/fschmidt/fschmidtCV.pdf",
+    "content/pages/about.md",
+    "content/posts/onyx-boox-templates.md",
+    "public/downloads/OnyxBooxTemplates/ProjectPlan.pdf",
     "archetypes/tils.md",
     "archetypes/posts.md",
-    "content/tils/_index.md"
+    "archetypes/default.md",
+    "themes/winston/README.md",
+    "themes/winston/exampleSite/content/pages/about.md"
   ]
 }
