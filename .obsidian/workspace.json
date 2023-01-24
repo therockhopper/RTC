@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/tils/WhatIs/unix-as-ide.md",
+                "file": "content/tils/_index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2edcbf5c44937f06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "themes/winston/archetypes/default.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/tils/WhatIs/unix-as-ide.md",
+                "file": "themes/winston/archetypes/default.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/tils/WhatIs/unix-as-ide.md",
+                "file": "themes/winston/archetypes/default.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/tils/WhatIs/unix-as-ide.md"
+                "file": "themes/winston/archetypes/default.md"
               }
             }
           }
@@ -146,17 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "08ec766c45d99dec",
+  "active": "175892d189f1a8ae",
   "lastOpenFiles": [
-    "content/tils/WhatIs/syncthing.md",
-    "content/tils/WhatIs/plex_debrid.md",
-    "content/posts/onyx-boox-templates.md",
-    "obsidian.vimrc.md",
-    "Untitled.md",
-    "content/posts/crf205l-front-wheel-align.md",
-    "content/posts/_index.md",
-    "content/tils/tmux/scripting-tmux.md",
-    "content/tils/git/conflicts.md",
-    "content/tils/git/aliases.md"
+    "archetypes/pages.md",
+    "themes/winston/archetypes/default.md",
+    "archetypes/default.md",
+    "content/WhatIs/unix-as-ide.md",
+    "content/_index.md",
+    "content/WhatIs/plex_debrid.md",
+    "content/WhatIs/_index.md",
+    "archetypes/tils.md",
+    "archetypes/posts.md",
+    "content/tils/_index.md"
   ]
 }
