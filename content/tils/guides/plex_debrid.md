@@ -1,10 +1,11 @@
 ---
-title: "Syncthing"
+title: "Plex Debrid"
 date: 2023-01-23T00:00:00-00:00
 tags: 
 - guides
 - selfHosted
-draft: true
+- mediaserver
+draft: false
 ---
 
 https://github.com/itsToggle/plex_debrid
