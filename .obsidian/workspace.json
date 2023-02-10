@@ -159,17 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "175892d189f1a8ae",
+  "active": "f5a57bdf692db784",
   "lastOpenFiles": [
-    "content/WhatIs/plex_debrid.md",
+    "content/WhatIs/unix-as-ide.md",
+    "content/WhatIs/syncthing.md",
     "content/WhatIs/podman.md",
+    "content/WhatIs/plex_debrid.md",
     "content/pages/about.md",
     "content/tils/css/aspect-ratio.md",
     "content/tils/git/conflicts.md",
     "content/tils/webgl/draw-images.md",
     "content/tils/shell/csv-to-json.md",
-    "public/downloads/fschmidt/fschmidtCV.pdf",
-    "archetypes/pages.md",
-    "content/posts/onyx-boox-templates.md"
+    "public/downloads/fschmidt/fschmidtCV.pdf"
   ]
 }
